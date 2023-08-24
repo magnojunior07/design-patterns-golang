@@ -2,9 +2,17 @@ package main
 
 func main() {
 	gunFactory := GunFactory{}
-	ak47, _ := gunFactory.makeGun("ak47")
-	maverick, _ := gunFactory.makeGun("maverick")
+
+	ak47, errAk47 := gunFactory.makeGun("ak47")
+	if errAk47 != nil {
+		fmt.Println(errAk47)
+	}
 	
+	maverick, errMaverick := gunFactory.makeGun("maverick")
+	if errMaverick != nil {
+		fmt.Println(errMaverick)
+	}
+
 	printGunDetails(ak47)
 	printGunDetails(maverick)
 }
