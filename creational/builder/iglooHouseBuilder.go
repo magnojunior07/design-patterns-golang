@@ -23,7 +23,7 @@ func (b *IglooHouseBuilder) setNumFloor() {
 }
 
 func (b *IglooHouseBuilder) getHouse() House {
-	return House{
+	return House {
 		doorType:   b.doorType,
 		windowType: b.windowType,
 		floor:      b.floor,
