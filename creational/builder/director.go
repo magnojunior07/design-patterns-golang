@@ -5,7 +5,7 @@ type Director struct {
 }
 
 func newDirector(b IBuilder) *Director {
-	return &Director {
+	return &Director{
 		builder: b,
 	}
 }

@@ -1,7 +1,7 @@
 package main
 
 type Gun struct {
-	name string
+	name  string
 	power int
 }
 

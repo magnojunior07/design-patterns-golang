@@ -23,7 +23,7 @@ func (b *NormalHouseBuilder) setNumFloor() {
 }
 
 func (b *NormalHouseBuilder) getHouse() House {
-	return House {
+	return House{
 		doorType:   b.doorType,
 		windowType: b.windowType,
 		floor:      b.floor,

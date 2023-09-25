@@ -5,10 +5,10 @@ type Maverick struct {
 }
 
 func newMaverick() IGun {
-		return &Maverick {
+	return &Maverick{
 		Gun: Gun{
-		name : "Maverick",
-		power: 5,
+			name:  "Maverick",
+			power: 5,
 		},
 	}
 }

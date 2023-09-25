@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	normaHouseBuilder, errNormalHouse := getBuider("normal")
+	normalHouseBuilder, errNormalHouse := getBuider("normal")
 	if(errNormalHouse != nil) {
 		fmt.Println(errNormalHouse)
 		return
@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("Builder pattern example")
 	fmt.Println("========================")
 
-	director := newDirector(normaHouseBuilder)
+	director := newDirector(normalHouseBuilder)
 	normalHouse := director.buildHouse()
 
 	fmt.Println("Normal House:")

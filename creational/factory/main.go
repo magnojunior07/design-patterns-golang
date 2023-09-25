@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	gunFactory := GunFactory{}
 
@@ -7,7 +9,7 @@ func main() {
 	if errAk47 != nil {
 		fmt.Println(errAk47)
 	}
-	
+
 	maverick, errMaverick := gunFactory.makeGun("maverick")
 	if errMaverick != nil {
 		fmt.Println(errMaverick)
