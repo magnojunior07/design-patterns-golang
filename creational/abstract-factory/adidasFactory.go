@@ -7,19 +7,19 @@ type AdidasShirt struct {
 	Shirt
 }
 
-type AdidasFactory struct {}
+type AdidasFactory struct{}
 
 func (a *AdidasFactory) makeShoe() IShoe {
 	return &AdidasShoe{
-		Shoe: Shoe {
-		logo: "adidas",
-		size: 14,
+		Shoe: Shoe{
+			logo: "adidas",
+			size: 14,
 		},
 	}
 }
 func (a *AdidasFactory) makeShirt() IShirt {
 	return &AdidasShirt{
-		Shirt: Shirt {
+		Shirt: Shirt{
 			logo: "adidas",
 			size: "XL",
 		},
